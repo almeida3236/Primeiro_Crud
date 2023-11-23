@@ -1,0 +1,34 @@
+<div class="container">
+  <h1>Lista Produto</h1>
+
+  <div class="msg">
+
+    <p>{{>_msg}} </p>
+  </div>
+  
+  <div class="form-control">
+   
+      <ul class="list">
+        <li>ID:{{product.id}}</li>
+        
+          
+        <li>Produto: {{product.product}}</li>
+        <li>Quantidade: {{product.amount}} KG</li>
+        <li>Preço: R$ {{product.price}}</li>
+
+       </ul>
+        <form
+        class="form_delete"
+      action="/products/remove/{{product.id}}"
+      method="post"
+      onsubmit="return confirm('Tem certeza que deseja remover este produto?')">
+     <a href="/products/edit/{{product.id}}" class="edit-btn">Editar</a>
+      <input type="submit" value="Remover" class="remove-btn" />
+      
+    </form>
+
+     
+
+
+  </div>
+</div>

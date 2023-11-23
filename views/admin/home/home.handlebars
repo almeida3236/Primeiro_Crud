@@ -1,0 +1,19 @@
+<h1>Cadastrar Produtos</h1>
+{{>_msg}}
+
+<form action="/products/insertproduct" method="post">
+  <div class="form-control">
+    <label for="">Produto:</label>
+    <input type="text" name="product" placeholder="Digite o nome do Produto" value="{{data.product}}" />
+  </div>
+  <div class="form-control">
+    <label for="">Quantidade:</label>
+    <input type="number" name="amount" placeholder="Digite Qunatidade " value="{{data.amount}}"/>
+  </div>
+  <div class="form-control">
+    <label for="">Preço:</label>
+    <input type="real" name="price" placeholder="Digite Qunatidade " value="{{data.price}}" />
+  </div>
+
+  <input type="submit" value="Cadastrar" />
+</form>

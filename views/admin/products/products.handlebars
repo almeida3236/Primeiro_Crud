@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="msg">
+
+    <p>{{>_msg}} </p>
+  </div>
+  <h1>Produtos disponíveis:</h1>
+  <div class="form-control">
+    {{#each products}}
+      <ul class="list">
+        <li>ID:{{this.id}}</li>
+        <li>
+          <span class="bold"><a href="/products/{{this.id}}">Produto:
+              {{this.product}}</a></span></li>
+        <li>Quantidade: {{this.amount}} KG</li>
+        <li>Preço: R$ {{this.price}}</li>
+
+      </ul>
+
+    {{/each}}
+  </div>
+</div>

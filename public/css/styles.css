@@ -1,0 +1,161 @@
+* {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+#navbar {
+  padding: 1.2em 2.4em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  background-color: #222;
+}
+
+#navbar ul li {
+  margin-left: 1em;
+}
+
+#navbar ul li a {
+  text-align: none;
+  color: #fff;
+  transition: 0.5s;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #222;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 70px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 1em;
+  color: #f6982d;
+
+  padding: 0.3em;
+  width: 350px;
+}
+
+.msg p {
+  text-align: center;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.alert-success {
+  background-color: #f6982d;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.alert-error {
+  background-color: brown;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.form-control input {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #f6982d;
+}
+.form_delete {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-btn,
+.remove-btn {
+  margin: 10px;
+}
+
+.edit-btn {
+  background-color: transparent;
+  color: #f6982d;
+  border: 2px solid #f6982d;
+  padding: 0.5em 1.3em;
+  margin-bottom: 7em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+form input[type="submit"] {
+  background-color: transparent;
+  color: #f6982d;
+  border: 2px solid #f6982d;
+  padding: 0.5em 1.3em;
+  margin-bottom: 7em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+form input[type="submit"]:hover,
+.edit-btn:hover {
+  /*background-color: #f6982d;*/
+  color: #fff;
+}
+
+.list {
+  border-bottom: 4px solid #fff;
+  margin: 30px;
+  padding-bottom: 15px;
+}
+
+.list li {
+  list-style: none;
+
+  padding: 5px;
+}
+.list li a {
+  color: #f6982d;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer span {
+  color: #f6982d;
+}
